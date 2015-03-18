@@ -9,7 +9,7 @@ import javax.faces.bean.ManagedBean;
 @ManagedBean
 public class ThemeCollectionView {
 
-    private List<Tema> themes;
+    private List<Theme> themes;
 
     private String themeId;
 
@@ -17,17 +17,17 @@ public class ThemeCollectionView {
     public void update() {
         themes = new ArrayList<>();
         for (int i = 0; i < 5; i++) {
-            themes.add(new Tema(i, "name" + i, "description" + i));
+            themes.add(new Theme(i, "name" + i, "description" + i));
         }
         System.out.println("themes: " + themes);
     }
 
 
-    public List<Tema> getThemes() {
+    public List<Theme> getThemes() {
         return themes;
     }
 
-    public void setThemes(List<Tema> themes) {
+    public void setThemes(List<Theme> themes) {
         this.themes = themes;
     }
 

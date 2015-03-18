@@ -1,20 +1,20 @@
 package es.art83.web.jsf;
 
-public class Tema {
+public class Theme {
     private int id;
 
     private String name;
 
     private String description;
 
-    public Tema(int id, String name, String description) {
+    public Theme(int id, String name, String description) {
         super();
         this.id = id;
         this.name = name;
         this.description = description;
     }
 
-    public Tema() {
+    public Theme() {
     }
 
     public int getId() {
@@ -43,7 +43,7 @@ public class Tema {
 
     @Override
     public String toString() {
-        return "Tema [id=" + id + ", name=" + name + ", description=" + description + "]";
+        return "Theme [id=" + id + ", name=" + name + ", description=" + description + "]";
     }
 
 }
