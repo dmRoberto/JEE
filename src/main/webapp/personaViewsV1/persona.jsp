@@ -14,25 +14,15 @@
 	<c:set var="pView" scope="request" value="${persona}" />
 	<div>${pView.update()}</div>
 	<form action="/Web/v1/persona" method="post">
-		<p>
-			Id: <input name="id" type="text" value="${pView.persona.id}" />
-		</p>
-		<p>
-			Nombre: <input name="nombre" type="text"
-				value="${pView.persona.nombre}" />${pView.errorMsg}</p>
-		<p>
-			Roles: <select name="rol">
-				<c:forEach var="rol" items="${pView.roles}">
-					<option value="${rol}">${rol}</option>
-				</c:forEach>
-			</select>
-		</p>
-		<p>
-			<input type="submit" value="Enviar" />
-		</p>
+		<p>Id: <input name="id" type="text" value="${pView.persona.id}" /></p>
+		<p>Nombre: <input name="nombre" type="text"	value="${pView.persona.nombre}" />${pView.errorMsg}</p>
+		<p>Roles: <select name="rol">
+			<c:forEach var="rol" items="${pView.roles}">
+				<option value="${rol}">${rol}</option>
+			</c:forEach>
+		</select></p>
+		<p><input type="submit" value="Enviar" /></p>
 	</form>
-	<p>
-		<a href="/Web/v1/home">Volver a Home</a>
-	</p>
+	<p><a href="/Web/v1/home">Volver a Home</a></p>
 </body>
 </html>

@@ -20,15 +20,9 @@
 				<li>${rol}</li>
 			</c:forEach>
 		</ul>
-		<p>
-			Rol nuevo: <input name="rol" type="text" value="" />
-		</p>
-		<p>
-			<input type="submit" value="Enviar" />
-		</p>
+		<p>Rol nuevo: <input name="rol" type="text" value="" /></p>
+		<p><input type="submit" value="Enviar" /></p>
 	</form>
-	<p>
-		<a href="/Web/v1/home">Volver a Home</a>
-	</p>
+	<p><a href="/Web/v1/home">Volver a Home</a></p>
 </body>
 </html>

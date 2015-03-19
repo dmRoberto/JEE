@@ -8,11 +8,7 @@
 </head>
 <body>
 	<h1>Home Persona: V1</h1>
-	<p>
-		<a href="/Web/v1/persona">Vista de Persona</a>
-	</p>
-	<p>
-		<a href="/Web/v1/rol">Vista de Rol</a>
-	</p>
+	<p><a href="/Web/v1/persona">Vista de Persona</a></p>
+	<p><a href="/Web/v1/rol">Vista de Rol</a></p>
 </body>
 </html>
