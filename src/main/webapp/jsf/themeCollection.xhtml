@@ -8,12 +8,11 @@
 </h:head>
 <h:body>
 	<h3>JSF 2</h3>
-	<h:form >
-		<h:selectOneMenu id="s1" value="#{themeCollectionView.themeId}">
+	<h:form>
+		<h:selectOneMenu value="#{themeCollectionView.themeId}">
 			<f:selectItems value="#{themeCollectionView.themes}" var="theme"
 				itemValue="#{theme.id}" itemLabel="#{theme.name}" />
 		</h:selectOneMenu>
-        <h:message for="s1" />
 		<h:commandButton value="submit" type="submit"
 			action="#{themeCollectionView.process}" />
 	</h:form>

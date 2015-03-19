@@ -5,13 +5,13 @@ public class Theme {
 
     private String name;
 
-    private String description;
+    private String question;
 
-    public Theme(int id, String name, String description) {
+    public Theme(int id, String name, String question) {
         super();
         this.id = id;
         this.name = name;
-        this.description = description;
+        this.question = question;
     }
 
     public Theme() {
@@ -33,17 +33,17 @@ public class Theme {
         this.name = name;
     }
 
-    public String getDescription() {
-        return description;
+    public String getQuestion() {
+        return question;
     }
 
-    public void setDescription(String description) {
-        this.description = description;
+    public void setQuestion(String question) {
+        this.question = question;
     }
 
     @Override
     public String toString() {
-        return "Theme [id=" + id + ", name=" + name + ", description=" + description + "]";
+        return "Theme [id=" + id + ", name=" + name + ", question=" + question + "]";
     }
 
 }
