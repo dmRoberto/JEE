@@ -32,16 +32,16 @@ public class VoteSubmitView {
             themes.add(new Theme(i, "name" + i, "question" + i));
         }
         themeId = 0;
-        this.updateVote();
         votes = new int[10];
         for (int i = 0; i < votes.length; i++) {
             votes[i] = i;
         }
+        this.updateVote();
     }
 
     private void updateVote() {
         question = themes.get(themeId).getQuestion();
-        voteValue = 0;
+        voteValue = votes[0];
         disabledVote = themeId == 0;
     }
 
