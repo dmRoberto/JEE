@@ -12,7 +12,7 @@ import javax.servlet.http.HttpServletResponse;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
-@WebServlet("/HelloServlet")// En 3.0 se utilizan anotaciones en lugar de XML
+@WebServlet("/helloServlet")// En 3.0 se utilizan anotaciones en lugar de XML
 public class HelloServlet extends HttpServlet {
     private static final long serialVersionUID = 1L;
     private Logger log = LogManager.getLogger(HelloServlet.class);

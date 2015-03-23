@@ -7,7 +7,7 @@ import javax.ws.rs.core.MediaType;
 
 import org.apache.logging.log4j.LogManager;
 
-@Path("/hello")
+@Path("/helloRest")
 public class HelloRest {
     @GET
     @Produces(MediaType.TEXT_PLAIN)
