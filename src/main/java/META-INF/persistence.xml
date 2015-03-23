@@ -1,5 +1,38 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<persistence version="2.1" xmlns="http://xmlns.jcp.org/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
-	<persistence-unit name="JEE.Web">
-	</persistence-unit>
+<persistence version="2.1"
+    xmlns="http://xmlns.jcp.org/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
+    <persistence-unit name="JEE" transaction-type="RESOURCE_LOCAL">
+        <provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
+        <class>es.art83.persistence.jpa.User1</class>
+        <class>es.art83.persistence.jpa.User2</class>
+        <class>es.art83.persistence.jpa.User3</class>
+        <class>es.art83.persistence.jpa.User4</class>
+        <class>es.art83.persistence.jpa.Address2</class>
+        <class>es.art83.persistence.jpa.User5</class>
+        <class>es.art83.persistence.jpa.Category2</class>
+        <class>es.art83.persistence.jpa.User6</class>
+        <class>es.art83.persistence.jpa.Boat2</class>
+        <class>es.art83.persistence.jpa.Phone2</class>
+        <class>es.art83.persistence.jpa.User7</class>
+        <class>es.art83.persistence.jpa.User8</class>
+        <class>es.art83.persistence.jpa.Vehicle2</class>
+        <class>es.art83.persistence.jpa.inheritance.C1</class>
+        <class>es.art83.persistence.jpa.inheritance.C1A</class>
+        <class>es.art83.persistence.jpa.inheritance.C1B</class>
+        <class>es.art83.persistence.models.entities.Address</class>
+        <class>es.art83.persistence.models.entities.Boat</class>
+        <class>es.art83.persistence.models.entities.Category</class>
+        <class>es.art83.persistence.models.entities.Phone</class>
+        <class>es.art83.persistence.models.entities.User</class>
+        <class>es.art83.persistence.models.entities.Vehicle</class>
+        <properties>
+            <property name="eclipselink.ddl-generation" value="none" /> <!--drop-and-create-tables   none-->
+            <property name="eclipselink.logging.level" value="INFO" /> <!-- OFF,WARNING,INFO,FINE,ALL -->
+            <property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/bbdd" />
+            <property name="javax.persistence.jdbc.user" value="root" />
+            <property name="javax.persistence.jdbc.password" value="" />
+            <property name="javax.persistence.jdbc.driver" value="com.mysql.jdbc.Driver" />
+        </properties>
+    </persistence-unit>
 </persistence>
